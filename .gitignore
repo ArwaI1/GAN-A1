@@ -1,0 +1,14 @@
+# Exclude the materials folder as requested
+Material/
+
+# Exclude virtual environment
+venv/
+
+# Exclude heavy datasets and model weights (GitHub will block files > 100MB)
+data/
+models/
+
+# Exclude Python cache files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
