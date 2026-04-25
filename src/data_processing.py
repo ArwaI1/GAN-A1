@@ -48,4 +48,4 @@ def create_datasets(data_dir, batch_size=64, img_size=(64, 64)):
     train_ds = normalized_ds.map(lambda x: (x, x)).prefetch(tf.data.AUTOTUNE)
     noisy_train_ds = normalized_ds.map(add_noise).prefetch(tf.data.AUTOTUNE)
     
-    return train_ds, noisy_train_dsNew-Item -ItemType File -Force -Path .gitignore
+    return train_ds, noisy_train_ds
